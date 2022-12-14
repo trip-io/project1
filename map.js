@@ -23,7 +23,7 @@ for (let i = 0; i < coordinatesList.length; i++) {
     naver.maps.Service.reverseGeocode({
       location: new naver.maps.LatLng(arr),
     }, function (status, response) {
-      if (status !== naver.maps.Service.Status.OK) {
+      if (status == naver.maps.Service.Status.OK) {
         return console.log('바다인가봐');
       }
 
